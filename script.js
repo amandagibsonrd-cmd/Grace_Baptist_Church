@@ -4,6 +4,7 @@
   const config = window.CHURCH_SITE || {};
   const address = config.address || {};
   const times = config.serviceTimes || {};
+  const mission = config.mission || {};
 
   const fullAddressText = [address.street, address.city, address.state, address.zip]
     .filter(Boolean)
@@ -19,9 +20,10 @@
     churchName: config.churchName,
     cityState: config.cityState,
     pastorName: config.pastorName,
-    sundaySchool: times.sundaySchool,
+    missionLine1: mission.line1,
+    missionLine2: mission.line2,
+    missionLine3: mission.line3,
     sundayMorning: times.sundayMorning,
-    sundayEvening: times.sundayEvening,
     wednesdayEvening: times.wednesdayEvening,
     shortAddress: address.street,
     fullAddress: fullAddressHtml,
@@ -58,7 +60,6 @@
   } else if (calendarFrame) {
     calendarFrame.hidden = true;
   }
-
 
 
   const year = document.getElementById('current-year');

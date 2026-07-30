@@ -4,7 +4,7 @@
   Edit the information between quotation marks below.
   This is the main file you will use for future website updates.
 
-  IMPORTANT: Please verify the service times and address before publishing.
+  Current weekly services: Sunday Service at 11:00 AM and Wednesday Prayer Meeting at 6:30 PM.
 */
 
 window.CHURCH_SITE = {
@@ -19,10 +19,14 @@ window.CHURCH_SITE = {
     zip: "70363"
   },
 
+  mission: {
+    line1: "Loving JESUS",
+    line2: "Loving People",
+    line3: "Making Disciples"
+  },
+
   serviceTimes: {
-    sundaySchool: "10:00 AM",
     sundayMorning: "11:00 AM",
-    sundayEvening: "6:00 PM",
     wednesdayEvening: "6:30 PM"
   },
 
