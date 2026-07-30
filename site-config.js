@@ -30,15 +30,5 @@ window.CHURCH_SITE = {
     wednesdayEvening: "6:30 PM"
   },
 
-  facebookUrl: "https://www.facebook.com/grace.baptist.3139/",
-
-  /*
-    GOOGLE CALENDAR:
-    Paste the PUBLIC Google Calendar embed URL between the quotation marks.
-    Leave blank until the calendar is ready.
-
-    Example format:
-    https://calendar.google.com/calendar/embed?src=YOUR_CALENDAR_ID&ctz=America%2FChicago
-  */
-  googleCalendarEmbedUrl: ""
+  facebookUrl: "https://www.facebook.com/grace.baptist.3139/"
 };

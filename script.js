@@ -49,18 +49,6 @@
   const mapFrame = document.getElementById('church-map');
   if (mapFrame && fullAddressText) mapFrame.src = mapEmbedUrl;
 
-  const calendarFrame = document.getElementById('church-calendar');
-  const calendarFallback = document.getElementById('calendar-fallback');
-  const calendarUrl = (config.googleCalendarEmbedUrl || '').trim();
-
-  if (calendarFrame && calendarFallback && calendarUrl) {
-    calendarFrame.src = calendarUrl;
-    calendarFrame.hidden = false;
-    calendarFallback.hidden = true;
-  } else if (calendarFrame) {
-    calendarFrame.hidden = true;
-  }
-
 
   const year = document.getElementById('current-year');
   if (year) year.textContent = new Date().getFullYear();
