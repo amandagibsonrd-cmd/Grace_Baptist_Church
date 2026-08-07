@@ -1,0 +1,41 @@
+HOW TO UPDATE THE WEBSITE EVENT CALENDAR
+========================================
+
+The Events section has two easy-to-update parts:
+
+1. THE PRINTED CALENDAR FLYER
+-----------------------------
+Save the newest flyer as a JPG and name it exactly:
+
+events-calendar.jpg
+
+In GitHub, replace the existing events-calendar.jpg with the new file.
+Keeping the same filename means you do not need to edit the website code.
+
+2. THE SEARCHABLE EVENT LIST
+----------------------------
+The text event cards are controlled by:
+
+events.js
+
+To add, remove, or change events:
+
+1. Open events.js in the Grace_Baptist_Church GitHub repository.
+2. Click the pencil icon.
+3. Edit the event list between the square brackets.
+4. Use YYYY-MM-DD for dates, such as 2026-09-06.
+5. Commit the change.
+
+Example:
+
+{
+  date: "2026-09-06",
+  time: "11:00 AM",
+  title: "Homecoming Service",
+  category: "Special Sunday",
+  location: "Grace Baptist Church"
+}
+
+The website automatically hides past events, sorts upcoming events by date,
+and groups them by month. Leave time or location as empty quotation marks
+when those fields are not needed.
