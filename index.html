@@ -35,7 +35,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
-  <script src="events.js" defer></script>
   <script src="script.js" defer></script>
 
   <script type="application/ld+json">
@@ -158,29 +157,25 @@
     </section>
 
     <section class="events section" id="events" aria-labelledby="events-title">
-      <div class="container">
-        <div class="section-heading events-heading">
-          <div><p class="eyebrow">Church calendar</p><h2 id="events-title">Upcoming events at Grace.</h2></div>
-          <div><p>See the current church calendar below. Schedule changes and new announcements are also posted on Facebook.</p><a class="text-link" href="https://www.facebook.com/grace.baptist.3139/" target="_blank" rel="noopener">View the latest updates on Facebook →</a></div>
-        </div>
-        <div class="calendar-layout">
-          <a class="calendar-poster" href="events-calendar.jpg" target="_blank" rel="noopener" aria-label="Open the current Grace Baptist Church event flyer full size">
-            <img src="events-calendar.jpg" alt="Current Grace Baptist Church calendar of events" loading="lazy">
-          </a>
-          <div class="calendar-right">
-            <div class="events-board" id="events-board" aria-live="polite">
-              <noscript>
-                <p>Please enable JavaScript to view the church event calendar, or visit Grace Baptist Church on Facebook for current events.</p>
-              </noscript>
-            </div>
-            <aside class="calendar-side">
-              <h3>Stay connected.</h3>
-              <p>Special services, youth activities, community outreach, fellowships, revivals, and schedule changes are shared here and on Facebook.</p>
-              <a class="button button-primary" href="https://www.facebook.com/grace.baptist.3139/" target="_blank" rel="noopener">Follow Grace on Facebook</a>
-              <a class="button button-outline" href="events-calendar.jpg" target="_blank" rel="noopener">Open Flyer Full Size</a>
-            </aside>
+      <div class="container facebook-events-grid">
+        <div class="facebook-events-copy">
+          <p class="eyebrow">Events &amp; updates</p>
+          <h2 id="events-title">See what’s happening at Grace.</h2>
+          <p>We keep our most current church events and announcements on Facebook so you can always see the latest information in one place. Check there for special services, youth nights, community outreach, fellowships, revivals, schedule changes, and more.</p>
+          <div class="button-row">
+            <a class="button button-primary" href="https://www.facebook.com/share/1FBvL5cyi2/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer">View Events on Facebook</a>
+            <a class="button button-outline" href="#visit">Plan a Visit</a>
           </div>
         </div>
+        <aside class="facebook-events-card" aria-label="Grace Baptist Church Facebook events">
+          <div class="facebook-mark" aria-hidden="true">f</div>
+          <div>
+            <small>Stay connected</small>
+            <h3>Grace Baptist Church on Facebook</h3>
+            <p>Follow the church page for the newest event details, reminders, photos, and schedule updates.</p>
+          </div>
+          <a class="facebook-card-link" href="https://www.facebook.com/share/1FBvL5cyi2/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer">Open Facebook <span aria-hidden="true">→</span></a>
+        </aside>
       </div>
     </section>
 
@@ -218,7 +213,7 @@
             <h3>Have questions about salvation?</h3>
             <p>We would be honored to talk with you. Send Grace Baptist Church a message or visit a service to speak with Pastor Irby Fitch about salvation and faith in Jesus.</p>
           </div>
-          <a class="button button-light" href="https://www.facebook.com/grace.baptist.3139/" target="_blank" rel="noopener">Message the Church</a>
+          <a class="button button-light" href="https://www.facebook.com/share/1FBvL5cyi2/?mibextid=wwXIfr" target="_blank" rel="noopener">Message the Church</a>
         </div>
       </div>
     </section>
@@ -236,7 +231,7 @@
           </dl>
           <div class="button-row">
             <a class="button button-primary" href="https://www.google.com/maps/search/?api=1&query=9775+East+Park+Avenue+Houma+LA+70363" target="_blank" rel="noopener">Get Directions</a>
-            <a class="button button-outline" href="https://www.facebook.com/grace.baptist.3139/" target="_blank" rel="noopener">Message on Facebook</a>
+            <a class="button button-outline" href="https://www.facebook.com/share/1FBvL5cyi2/?mibextid=wwXIfr" target="_blank" rel="noopener">Message on Facebook</a>
           </div>
         </div>
         <div class="location-photo"><img src="church-hero.webp" alt="Front exterior of Grace Baptist Church in Houma with the church sign" loading="lazy"></div>
@@ -252,7 +247,7 @@
     <div class="container footer-main">
       <a class="brand footer-brand" href="#top"><img src="grace-logo-mark.webp" alt="" width="52" height="52"><span><strong>Grace Baptist Church</strong><small>Houma, Louisiana</small></span></a>
       <p>Loving JESUS. Loving People. Making Disciples.</p>
-      <nav aria-label="Footer navigation"><a href="#visit">Plan a Visit</a><a href="#events">Events</a><a href="https://www.facebook.com/grace.baptist.3139/" target="_blank" rel="noopener">Facebook</a><a href="#contact">Directions</a></nav>
+      <nav aria-label="Footer navigation"><a href="#visit">Plan a Visit</a><a href="#events">Events</a><a href="https://www.facebook.com/share/1FBvL5cyi2/?mibextid=wwXIfr" target="_blank" rel="noopener">Facebook</a><a href="#contact">Directions</a></nav>
     </div>
     <div class="container footer-bottom"><span>© <span id="year"></span> Grace Baptist Church. All rights reserved.</span><a href="#top">Back to top ↑</a></div>
   </footer>

@@ -148,3 +148,96 @@ img{display:block;max-width:100%}a{color:inherit}.container{width:min(calc(100% 
   border:1px solid rgba(194,160,100,.42);
 }
 .salvation-callout .button-light{background:var(--gold);color:var(--navy-deep);}
+
+
+/* Facebook-first events section — Facebook is the church's live event calendar. */
+.facebook-events-grid{
+  display:grid;
+  grid-template-columns:minmax(0,1.05fr) minmax(340px,.95fr);
+  gap:64px;
+  align-items:center;
+}
+.facebook-events-copy{max-width:690px;}
+.facebook-events-copy>p:not(.eyebrow){
+  max-width:650px;
+  margin-bottom:30px;
+  color:var(--muted);
+  font-size:1.08rem;
+  line-height:1.75;
+}
+.facebook-events-copy .button-outline{
+  color:var(--navy);
+  border-color:rgba(13,39,72,.2);
+  background:#fff;
+}
+.facebook-events-card{
+  padding:40px;
+  display:grid;
+  grid-template-columns:70px 1fr;
+  gap:24px;
+  align-items:start;
+  border:1px solid rgba(194,160,100,.38);
+  border-radius:32px;
+  color:#fff;
+  background:
+    radial-gradient(circle at 100% 0%,rgba(194,160,100,.19),transparent 34%),
+    linear-gradient(145deg,var(--navy),var(--navy-deep));
+  box-shadow:var(--shadow);
+}
+.facebook-mark{
+  width:70px;
+  height:70px;
+  display:grid;
+  place-items:center;
+  border-radius:22px;
+  color:var(--navy-deep);
+  background:var(--gold);
+  font-family:Arial,sans-serif;
+  font-size:2.8rem;
+  font-weight:800;
+  line-height:1;
+}
+.facebook-events-card small{
+  display:block;
+  margin-bottom:8px;
+  color:var(--sage);
+  font-family:var(--display);
+  font-size:.69rem;
+  font-weight:800;
+  letter-spacing:.15em;
+  text-transform:uppercase;
+}
+.facebook-events-card h3{
+  margin-bottom:13px;
+  font-size:clamp(1.65rem,2.8vw,2.25rem);
+}
+.facebook-events-card p{
+  margin-bottom:0;
+  color:rgba(255,255,255,.72);
+  font-size:1rem;
+  line-height:1.7;
+}
+.facebook-card-link{
+  grid-column:1 / -1;
+  margin-top:8px;
+  padding-top:22px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  border-top:1px solid rgba(255,255,255,.14);
+  color:#fff;
+  font-family:var(--display);
+  font-weight:800;
+  text-decoration:none;
+}
+.facebook-card-link span{color:var(--gold);font-size:1.35rem;}
+@media(max-width:950px){
+  .facebook-events-grid{grid-template-columns:1fr;gap:38px;}
+  .facebook-events-copy{max-width:760px;}
+  .facebook-events-card{max-width:760px;}
+}
+@media(max-width:620px){
+  .facebook-events-card{padding:28px 24px;grid-template-columns:58px 1fr;gap:18px;border-radius:24px;}
+  .facebook-mark{width:58px;height:58px;border-radius:18px;font-size:2.25rem;}
+  .facebook-events-copy>p:not(.eyebrow){font-size:1rem;}
+}
